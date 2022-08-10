@@ -1,0 +1,141 @@
+{
+    "RowCount": 5,
+    "ColumnCount": 5,
+    "JSONInfo": [
+        {
+            "X": -1.2359999418258668,
+            "Y": 0.0,
+            "ConnectTo": 0,
+            "IsRoot": true,
+            "Color": 0,
+            "Row": 0,
+	    "Column": 0
+        },
+        {
+            "X": -0.6150000095367432,
+            "Y": 0.0,
+            "ConnectTo": 0,
+            "IsRoot": true,
+            "Color": 2,
+            "Row": 1,
+	    "Column": 0
+        },
+        {
+            "X": 0.0,
+            "Y": 0.0,
+            "ConnectTo": 0,
+            "IsRoot": true,
+            "Color": 1,
+            "Row": 2,
+	    "Column": 0
+        },
+        {
+            "X": 0.6150000095367432,
+            "Y": 0.0,
+            "ConnectTo": 0,
+            "IsRoot": true,
+            "Color": 0,
+            "Row": 3,
+	    "Column": 0
+        },
+        {
+            "X": 1.2359999418258668,
+            "Y": 0.0,
+            "ConnectTo": 0,
+            "IsRoot": true,
+            "Color": 2,
+            "Row": 4,
+	    "Column": 0
+        },
+        {
+            "X": -0.9300000071525574,
+            "Y": -0.5350000262260437,
+            "ConnectTo": 1,
+            "IsRoot": false,
+            "Color": 1,
+            "Row": 0,
+	    "Column": 1
+        },
+        {
+            "X": -0.3100000023841858,
+            "Y": -0.5350000262260437,
+            "ConnectTo": 2,
+            "IsRoot": false,
+            "Color": 0,
+            "Row": 1,
+	    "Column": 1
+        },
+        {
+            "X": 0.3100000023841858,
+            "Y": -0.5350000262260437,
+            "ConnectTo": 3,
+            "IsRoot": false,
+            "Color": 2,
+            "Row": 2,
+	    "Column": 1
+        },
+        {
+            "X": 0.9300000071525574,
+            "Y": -0.5350000262260437,
+            "ConnectTo": 4,
+            "IsRoot": false,
+            "Color": 1,
+            "Row": 3,
+	    "Column": 1
+        },
+        {
+            "X": -0.621999979019165,
+            "Y": -1.0700000524520875,
+            "ConnectTo": 6,
+            "IsRoot": false,
+            "Color": 2,
+            "Row": 0,
+	    "Column": 2
+        },
+        {
+            "X": 0.0,
+            "Y": -1.0700000524520875,
+            "ConnectTo": 7,
+            "IsRoot": false,
+            "Color": 1,
+            "Row": 1,
+	    "Column": 2
+        },
+        {
+            "X": 0.621999979019165,
+            "Y": -1.0700000524520875,
+            "ConnectTo": 8,
+            "IsRoot": false,
+            "Color": 0,
+             "Row": 2,
+	    "Column": 2
+        },
+        {
+            "X": -0.3100000023841858,
+            "Y": -1.6050000190734864,
+            "ConnectTo": 10,
+            "IsRoot": false,
+            "Color": 0,
+            "Row": 0,
+	    "Column": 3
+        },
+        {
+            "X": 0.3100000023841858,
+            "Y": -1.6050000190734864,
+            "ConnectTo": 11,
+            "IsRoot": false,
+            "Color": 2,
+            "Row": 1,
+	    "Column": 3
+        },
+        {
+            "X": 0.0,
+            "Y": -2.1480000019073488,
+            "ConnectTo": 13,
+            "IsRoot": false,
+            "Color": 1,
+            "Row": 0,
+	    "Column": 4
+        }
+    ]
+}
