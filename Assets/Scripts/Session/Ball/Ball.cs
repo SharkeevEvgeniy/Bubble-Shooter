@@ -13,7 +13,7 @@ namespace BubbleShooter.Session.Ball
         private Vector2 _direction;
         private BallActionType _actionType;
 
-        private bool _isPause;
+        private bool _isAttached;
 
         private CircleCollider2D _collider;
         private SpringJoint2D _springJoint;
@@ -21,7 +21,6 @@ namespace BubbleShooter.Session.Ball
 
         private GameSession _gameSession;
         private BallInfo _ballInfo;
-
 
         private void Awake()
         {
@@ -33,7 +32,7 @@ namespace BubbleShooter.Session.Ball
 
         private void Update()
         {
-            if (_isPause == true)
+            if (_isAttached == true)
                 return;
 
             Move();
@@ -44,11 +43,6 @@ namespace BubbleShooter.Session.Ball
             transform.Translate(_direction * Time.deltaTime * (_startVelocity + (_startVelocity * _velocityMultiple)));
         }
 
-        public void SetVelocityMultiple(float velocityMuiltiple)
-        {
-            _velocityMultiple = velocityMuiltiple;
-        }
-
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.CompareTag("Border") == true ||
@@ -57,12 +51,12 @@ namespace BubbleShooter.Session.Ball
                 _direction = Vector2.Reflect(_direction, collision.contacts[0].normal);
             }
 
-            if (_isPause == true)
+            if (_isAttached == true)
                 return;
 
             if (collision.gameObject.CompareTag("Ball") == true)
             {
-                _isPause = true;
+                _isAttached = true;
 
                 if (_actionType == BallActionType.Attach)
                 {
@@ -95,6 +89,8 @@ namespace BubbleShooter.Session.Ball
 
         public void SetActionType(BallActionType actionType) => _actionType = actionType;
 
+        public void SetVelocityMultiple(float velocityMuiltiple) => _velocityMultiple = velocityMuiltiple;
+        
         public void SetDirection(Vector2 direction)
         {
             _collider.enabled = true;

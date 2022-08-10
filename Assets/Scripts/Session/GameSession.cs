@@ -237,15 +237,9 @@ namespace BubbleShooter.Session
             _ballDestroyer.Destroy(to.gameObject);
         }
 
-        public void ResetRowAndColumn(int row, int column)
-        {
-            _ballsPositions[row, column] = -1;
-        }
+        public void ResetRowAndColumn(int row, int column) => _ballsPositions[row, column] = -1;
 
-        public void AddBallInfo(BallInfo ballInfo)
-        {
-            _ballInfos.Add(ballInfo);
-        }
+        public void AddBallInfo(BallInfo ballInfo) => _ballInfos.Add(ballInfo);
 
         private void ShowMovesCount(int count)
         {

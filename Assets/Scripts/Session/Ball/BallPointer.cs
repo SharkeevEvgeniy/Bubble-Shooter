@@ -88,10 +88,8 @@ namespace BubbleShooter.Session.Ball
             _ball = ball;
         }
 
-        public void SetLock(bool value)
-        {
-            _lockDragging = value;
-        }
+        public void SetLock(bool value) => _lockDragging = value;
+
 
         private void Disable()
         {
